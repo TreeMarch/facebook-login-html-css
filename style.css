@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Helvetica, sans-serif;
+}
+.main-wrapper {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.branding {
+  text-align: center;
+}
+.logo {
+  color: #1877f2;
+  font-size: 3.7rem;
+}
+.slogan {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 20px 0;
+}
+.panel {
+  background-color: #fff;
+  width: 400px;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input {
+  width: 100%;
+  font-size: 17px;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  /* outline: 1px solid #1877f2; */
+}
+
+.log-in-button {
+  color: #fff;
+  background-color: #1877f2;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.forgot {
+  text-decoration: none;
+  color: #1877f2;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.forgot:hover {
+  text-decoration: underline;
+}
+.register-button {
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 0 16px;
+  line-height: 48px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+  background-color: #42b72a;
+  color: #fff;
+  width: 190px;
+  transform: translateX(90px);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+hr {
+  margin: 19px 0;
+  opacity: 0.3;
+}
+
+.register-button:hover {
+  background-color: #378028f6;
+}
+.buttom-link {
+  margin-top: 28px;
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+}
+.page {
+  color: #1c1e21;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.page:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 890px) {
+  .main-wrapper {
+    width: 90%;
+    max-width: 980px;
+    flex-direction: row;
+    padding-top: 70px;
+    justify-content: space-between;
+  }
+  .branding {
+    text-align: left;
+    padding-top: 80px;
+    width: 400px;
+  }
+}
